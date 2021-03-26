@@ -60,10 +60,8 @@ a{
     margin:auto;
     background:transparent;
     min-height:10vh;
-    padding:15px 20px;
-  
+    padding:15px 25px;
     
-    top:0px;
    
 }
 .hero,#blog{
@@ -470,7 +468,7 @@ margin-top:3rem;
     background: orange;
     overflow: hidden;
     padding-bottom:10px;
-    margin:10px 5px;
+    margin:5px 5px;
   }
     .item::after {
       content: '';
@@ -559,4 +557,13 @@ margin-top:3rem;
       margin: 0;
     }
   
+    .columun1{
+        overflow:hidden;
+    }
+  .column1 img{
+    transition: transform .2s;
+  }
+  .column1:hover{
+    transform: scale(1.3); 
+  }
   
