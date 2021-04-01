@@ -3,19 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Train+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monoton&family=Train+One&display=swap');
 
-*,
-*::before,
-*::after
-{
+*{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-body{
-    
-    font-family: 'Dosis', sans-serif;
-  
-    
+html,body{
+    font-family: 'Dosis', sans-serif;    
 }
 button:focus{
     outline:none;
@@ -30,27 +24,20 @@ a{
     transition:border-color 0.5s;
     padding-bottom:0.5rem;
 }
+
+/* Navbar */
+
 .links a:hover{
     border-color:orange;
 }
-
 .links{
     display:flex;
-
 }
 .links li{
-    
     font-size:18px;
     padding: 1rem 1.5rem;
 }
 
-.container h2,#work h2{
-    text-transform: uppercase;
-    font-size:32px;
-    letter-spacing: 1.5px;
-}
-
-/*Navbar*/
 .nav
 {
     display:flex;
@@ -60,36 +47,36 @@ a{
     margin:auto;
     background:transparent;
     min-height:10vh;
-    padding:15px 25px;
-    
-   
+    padding:15px 25px;   
 }
+
+.logo{   
+    color:orange;
+    font-size:42px;
+    font-weight:bold;
+}
+
 .hero,#blog{
     background: radial-gradient(rgba(43,55,96,1),rgba(11,16,35,1));
 }
 .hero{
     height:100vh;
-    
-    
-    
 }
 
 .hero h1{
     font-family: 'Train One', cursive;
 }
-.logo{
-    
-    color:orange;
-    font-size:42px;
-    font-weight:bold;
-    
+
+.container h2,#work h2{
+    text-transform: uppercase;
+    font-size:32px;
+    letter-spacing: 1.5px;
 }
 
 .details{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 .content{
     height:100%;
@@ -99,10 +86,8 @@ a{
 border-radius:50%;
 margin:auto;
 height:100%;
-
 display:flex;
 justify-content: center;
-
 animation:drop 1.2s ease;
 }
 
@@ -126,9 +111,7 @@ animation:drop 1.2s ease;
     font-size: 42px;
     font-weight: 500;
     color:#fff;
-    
     font-family: 'Bungee Shade', cursive;
-   
 }
 p{
     margin-top:5px;
@@ -209,6 +192,7 @@ p{
 .footer p{
     text-align:center;
     color:#fff;
+    padding-top:5px;
 }
 
 .flex-items img{
@@ -247,9 +231,8 @@ transform-origin: top;
     object-fit:cover;
 }
 
+/*Blog*/
 
-/*Blog*/
-/*Blog*/
 #blog .column2{
     
     color:#fff;
@@ -320,51 +303,14 @@ height:100%;
 .column2 a{
     color:#fff;
 }
-@media screen and (max-width:744px){
-    .page{
-        flex-direction: column;
-    }
-    .details{
-        margin-bottom:40px;
-        text-align: center;
-    }
-    .specials{
-        grid-template-columns: 1fr;
-    }
-    h1{
-        font-size: 30px;
-    }
-    p{
-        font-size: 18px;
-    }
-    .button{
-        padding-top:10px;
-    }
-    .content img{
-        height:40%;
-    }
-    @keyframes drop{
-        0%{
-            opacity:0;
-            transform: translateY(-40px);
-        }
-        100%{
-            opacity:1;
-            transform: translateY(0px);
-        }
-    }
-    .btn{
-        padding:10px;
-        height:40px;
-        width:100px;
-    }
-}
 
 /* Skills */
+
 #skills{
     background-color: #fff;
     color:#444;
-    margin-top:3rem;
+    padding-top:25px;
+    padding-bottom:25px;
 }
 .center{
     text-align: center;
@@ -403,8 +349,12 @@ margin-top:3rem;
     overflow:hidden;
 }
 
-
 /*contact*/
+
+#contact{
+    
+    padding:25px;
+}
 #contact .text-fields {
     display: grid;
     grid-template-areas: 'name email' 'subject phone' 'message message';
@@ -460,6 +410,7 @@ margin-top:3rem;
   .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-top:20px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   }
   
@@ -557,13 +508,134 @@ margin-top:3rem;
       margin: 0;
     }
   
-    .columun1{
-        overflow:hidden;
-    }
+   
   .column1 img{
-    transition: transform .2s;
-  }
-  .column1:hover{
-    transform: scale(1.3); 
+    
+    width:100%;
+    height:100%;
+    object-fit: cover;
   }
   
+  .flex-items .row{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+.flex-items .column{
+display: flex;
+flex-direction: column;
+flex-basis: 100%;
+flex:1;
+}
+.flex-items img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.flex-items .column2{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+padding:20px;
+color:#fff;
+height:100%;
+background: radial-gradient(rgba(43,55,96,1),rgba(11,16,35,1));
+}
+.flex-items h4{
+    font-size:30px;
+}
+.flex-items .btn{
+    border:2px solid #fff;
+}
+  @media screen and (max-width:744px){
+      #nav{
+          margin:0 auto;
+          width:90vw;
+      }
+     .page{
+         flex-direction: column-reverse;
+     }
+
+     .content img{
+        border-radius:50%;
+        margin:auto;
+        height:150px;
+        display:flex;
+        justify-content: center;
+        animation:drop 1.2s ease;
+        margin-bottom:25px;
+        }
+    
+    
+    .details h1{
+        line-height:0.5rem;
+        font-size:31px;
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .details p{
+        
+        font-size:19px;
+        text-align: center;
+    }
+    .specials{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .button{
+        text-align:center;
+        padding-top:0;
+    }
+    /*h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .button{
+        padding-top:10px;
+    }
+    .content img{
+        height:40%;
+    }*/
+    @keyframes drop{
+        0%{
+            opacity:0;
+            transform: translateY(-40px);
+        }
+        100%{
+            opacity:1;
+            transform: translateY(0px);
+        }
+    }
+    /*.btn{
+        padding:10px;
+        height:40px;
+        width:100px;
+    }*/
+    .row{
+        flex-direction: column;
+    }
+    .items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .column1 img{
+        object-fit:cover;
+        height:100%;
+        width:100%;
+    }
+    .flex-items img{
+        height:100%;
+        width:100%;
+        object-fit: cover;
+    }
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-items .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
