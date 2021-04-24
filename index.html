@@ -6,93 +6,106 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="utilities.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 
-  <link rel="icon" href="https://img.icons8.com/emoji/100/000000/woman-technologyst.png" />
+  <link rel="icon" href="https://img.icons8.com/emoji/100/000000/woman-technologyst.p" />
   <title>Kritika Srivastava</title>
 </head>
 
 <body>
+ 
+        <header class="hero"> 
+            <div id="navbar" class="navbar top">
+                <h1 class="logo">
+                 
+                  KS
+                </h1>
+                <nav>
+                  <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#work">PROJECTS</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                   
+                  </ul>
+                </nav>
+              </div>
+        
+            <main>
+                <section class="presentation">
+                    <div class="introduction">
+                        <div class="intro-text">
+                            <h1 class="details">Kritika Srivastava</h1>
+                            <p>Hi, I am a React Frontend Developer.</p>
+                        </div>
+                        <div class="cta">
+                            <button class="home-btn">View My Work</button>
+                            
+                        </div>
+                    </div>
+                    <div class="cover">
+                        <img src="./img/Kritika_Srivastava.jpeg" alt="matebook" />
+                    </div>
+                </section>
+                </main>
+            
+            </header>
 
-  <header class="hero">
-    <nav class="nav">
-      <h1 class="logo">KS</h1>
-      <ul class="links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#work">PROJECTS</a></li>
-        <li><a href="#blog">BLOG</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section class="page">
+            <div class="about-section" id="about">
+                
+                <h2>About Me</h2>
 
-        <div class="details">
-          <h1>Kritika Srivastava</h1>
-          <p>Hi, I am a React Frontend Developer with 7 months of experience. I can solve problems by building web apps and websites.
-            I am working as Freelance Technical Writer for Workshub,an Open source enthusiast and Tech Blogger. 
-            Former SAP Developer and graduated in Computer Science & Engineering.
-          </p>
-          <div class="button">
-            <button class="btn a"><a href="invoice.pdf" download>Download CV<i
-                  class="fa fa-download fa-1x"></i></a></button>
-            <button class="btn b"><a href="#work">My Projects</a></button>
+                <div class="bottom-line"></div>
+                <p>Hi, I am a React Frontend Developer with 1 year of experience.</p>
+                <p>I can solve problems by building web apps and websites.</p>
+                    <p>I am working as Freelance Technical Writer for Workshub,an Open source enthusiast and Tech Blogger. 
+                    </p>
+                    <p>Former SAP Developer and graduated in Computer Science & Engineering.
+                  </p>
+              </div>
+
+              <!-- About: Icons -->
+      <section id="skills" class="icons bg-light center">
+        <h2>My Skills</h2>
+        <div class="bottom-line"></div>
+        <div class="flex-items-about">
+          <div>
+            <i class="fas fa-desktop fa-2x"></i>
+            <div>
+              <h3>FRONTEND</h3>
+              <p>
+              HTML, CSS, SASS, JavaScript, React, Material UI, Bulma, Bootstrap, Styled Components
+              </p>
+            </div>
+          </div>
+          <div>
+            <i class="fa fa-server fa-2x"></i>
+            <div>
+              <h3>BACKEND</h3>
+              <p>
+                Nodejs, Express, MongoDB, PostgreSQL, Firebase
+              </p>
+            </div>
+          </div>
+          <div>
+            <div><i class="fas fa-file-alt fa-2x"></i>
+            <div>
+              <h3>OTHERS</h3>
+              <p>
+                Rest API, GIT, JIRA, Jest, Enzyme, Agile(SCRUM), KANBAN, React Testing Library
+              </p>
+            </div>
           </div>
         </div>
-        <div class="content">
-          <img src="img/Kritika_Srivastava.jpeg" alt="profile">
-        </div>
-
-      </section>
-    </main>
-  </header>
-
-  <!--Skills-->
-  <section id="skills" class="center">
-    <div class="container">
-      <h2>My Skills</h2>
-      <div class="bottom-line"></div>
-      <div class="specials">
-        <div>
-          <i class="fas fa-desktop fa-2x"></i>
-          <h3>FRONTEND</h3>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>SASS</p>
-          <p>JavaScript</p>
-          <p>React</p>
-        </div>
-
-        <div>
-          <i class="fa fa-server fa-2x"></i>
-          <h3>BACKEND</h3>
-          <p>Nodejs</p>
-          <p>Express</p>
-          <p>Rest API</p>
-        </div>
-
-        <div><i class="fas fa-database fa-2x"></i>
-          <h3>DATABASE</h3>
-          <p>Mongo DB</p>
-          <p>SQL</p>
-          <p>Firebase</p>
-        </div>
-
-        <div><i class="fas fa-file-alt fa-2x"></i>
-          <h3>OTHERS</h3>
-
-          <p>GIT</p>
-          <p>JIRA</p>
-          <p>Agile(SCRUM)</p>
-          <p>Kanban Board</p>
-          <p>Enzyme</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Projects-->
+      </section>      
+            <!--Skills-->
+             <!--Projects-->
   <section id="work" class="flex-items cases">
 
     <h2>My Projects</h2>
@@ -107,7 +120,7 @@
         <div class="item-text">
           <div class="item-text-wrap">
             <h2 class="item-text-title">E-commerce App</h2>
-            <p class="item-text-category">React app</p>
+           
             <button class="b project"><a href="#work">Github</a></button>
             <button class="b project"><a href="#work">Live Project</a></button>
           </div>
@@ -120,7 +133,7 @@
         <div class="item-text">
           <div class="item-text-wrap">
             <h2 class="item-text-title">Portfolio</h2>
-            <p class="item-text-category">HTML,CSS & JavaScript</p>
+           
             <button class="b project"><a href="#work">Github</a></button>
             <button class="b project"><a href="#work">Live Project</a></button>
 
@@ -129,12 +142,12 @@
       </div>
       <div class="item">
         <div class="item-image">
-          <img src="img/carli-jeen-UWRqlJcDCXA-unsplash.jpg" alt="restaurant" />
+          <img src="img/kimia-zarifi-pcST1a65ekI-unsplash.jpg" alt="restaurant" />
         </div>
         <div class="item-text">
           <div class="item-text-wrap">
+         
             <h2 class="item-text-title">Restaurant Website</h2>
-            <p class="item-text-category">It is a Restaurant website built sing HTML & CSS.</p>
 
             <button class=" b project"><a href="https://github.com/kritika27/restaurant-website">Github</a></button>
             <button class=" b project"><a href="https://vigorous-beaver-01def2.netlify.app/">Live Project</a></button>
@@ -142,140 +155,36 @@
         </div>
       </div>
 
-      <div class="item">
-        <div class="item-image">
-          <img src="img/kimia-zarifi-pcST1a65ekI-unsplash.jpg" alt="invoice generator" />
-        </div>
-        <div class="item-text">
-          <div class="item-text-wrap">
-            <h2 class="item-text-title">Recipe App</h2>
-            <p class="item-text-category">React App</p>
-
-            <button class=" b project"><a href="#work">Github</a></button>
-            <button class=" b project"><a href="#work">Live Project</a></button>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-image">
-          <img src="img/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg" alt="invoice generator" />
-        </div>
-        <div class="item-text">
-          <div class="item-text-wrap">
-            <h2 class="item-text-title">Rest API</h2>
-            <p class="item-text-category">Nodejs,Express & Mongo DB</p>
-
-            <button class=" b project"><a href="#work">Github</a></button>
-            <button class=" b project"><a href="#work">Live Project</a></button>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-image">
-          <img src="img/bruno-nascimento-PHIgYUGQPvU-unsplash.jpg" alt="invoice generator" />
-        </div>
-        <div class="item-text">
-          <div class="item-text-wrap">
-            <h2 class="item-text-title">Exercise App</h2>
-            <p class="item-text-category">MERN stack</p>
-
-            <button class=" b project"><a href="#work">Github</a></button>
-            <button class=" b project"><a href="#work">Live Project</a></button>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </section>
-  <!--Blog-->
-  <section id="blog" class="solutions flex-items">
-    <div class="row">
-      <div class="column">
-        <div class="column1">
-          <img src="img/thought-catalog-505eectW54k-unsplash.jpg" alt="">
-        </div>
-      </div>
-      <div class="column">
-        <div class="column2">
-
-          <h1><i class="fa fa-newspaper fa-1x"> </i> BLOG POSTS</h1>
-          <p><i class="fa fa-pen"></i> <a
-              href="https://dev.to/kritika27/list-of-apis-to-use-for-creating-javascript-react-app-8m4">List of APIs to
-              use for creating JavaScript/React App.</a></p>
-          <p><i class="fa fa-pen"></i> <a
-              href="https://dev.to/kritika27/react-code-structuring-and-best-practices-3k7p">React code structuring and
-              best practices.</a></p>
-          <p><i class="fa fa-pen"></i> <a href="https://dev.to/kritika27/react-beginner-project-ideas-2dh9">React
-              beginner project ideas.</a></p>
-          <p><i class="fa fa-pen"></i> <a
-              href="https://dev.to/kritika27/few-npm-packages-for-using-in-your-project-1o97">Few npm packages for using
-              in your project.</a></p>
-
-          <p><i class="fa fa-pen"></i> <a
-              href="https://dev.to/kritika27/mongodb-setup-for-creating-rest-api-1d14">MongoDB setup for creating REST
-              API.</a></p>
-
-          <a href="https://dev.to/kritika27"><button class="btn-blog">Read More</button></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--contact-->
-  <section id="blog" class="solutions flex-items">
-    <div class="row">
-        <div class="column">
-            <div class="column1">
-                <img src="img/thought-catalog-505eectW54k-unsplash.jpg" alt="blog post">
-            </div>
-        </div>
-            <div class="column">
-            <div class="column2">
-                
-              <h1><i class="fa fa-newspaper fa-1x"> </i> BLOG POSTS</h1>
-              <p><i class="fa fa-pen"></i> <a
-                  href="https://dev.to/kritika27/list-of-apis-to-use-for-creating-javascript-react-app-8m4">List of APIs to
-                  use for creating JavaScript/React App.</a></p>
-              <p><i class="fa fa-pen"></i> <a
-                  href="https://dev.to/kritika27/react-code-structuring-and-best-practices-3k7p">React code structuring and
-                  best practices.</a></p>
-              <p><i class="fa fa-pen"></i> <a href="https://dev.to/kritika27/react-beginner-project-ideas-2dh9">React
-                  beginner project ideas.</a></p>
-              <p><i class="fa fa-pen"></i> <a
-                  href="https://dev.to/kritika27/few-npm-packages-for-using-in-your-project-1o97">Few npm packages for using
-                  in your project.</a></p>
-    
-              <p><i class="fa fa-pen"></i> <a
-                  href="https://dev.to/kritika27/mongodb-setup-for-creating-rest-api-1d14">MongoDB setup for creating REST
-                  API.</a></p>
-    
-              <a href="https://dev.to/kritika27"><button class="btn-blog">Read More</button></a>
+             <!--Blog-->
+             <section id="blog" class="solutions flex-items">
+                <div class="row">
+                    <div class="column">
+                        <div class="column1">
+                            <img src="img/thought-catalog-505eectW54k-unsplash.jpg" alt="">
+                        </div>
+                    </div>
+                        <div class="column">
+                        <div class="column2">
+                            
+                      <h4>Blog Posts</h4>
+                      <p><i class="fa fa-pen"></i> <a href="https://dev.to/kritika27/react-beginner-project-ideas-2dh9">React
+                        beginner project ideas.</a></p>
+                    <p><i class="fa fa-pen"></i> <a
+                        href="https://dev.to/kritika27/few-npm-packages-for-using-in-your-project-1o97">Few npm packages for using
+                        in your project.</a></p>
+                      <p><i class="fa fa-pen"></i> <a
+                        href="https://dev.to/kritika27/mongodb-setup-for-creating-rest-api-1d14">MongoDB setup for creating REST
+                        API.</a></p>
+                            <button class="btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </section> 
             
-            </div>
-        </div>
-    </div>
-</section>
-  <!-- Section A: Contact Form -->
-  <section id="contact" class="center py-3">
-    <div class="container">
-      <h2 class="section-title">Contact Me</h2>
-      <div class="bottom-line"></div>
-
-      <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
-        <div class="text-fields">
-          <input type="text" class="text-input name-input" placeholder="Name" name="name" />
-          <input type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
-          <input type="email" class="text-input email-input" placeholder="Email Address" name="email" />
-          <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
-          <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
-          <div class="my-2">
-            <div data-netlify-recaptcha="true"></div>
-          </div>
-        </div>
-        <button type="submit" class="btn-dark">Send</button>
-      </form>
-    </div>
-  </section>
-
-  <!--Footer-->
+            <!--Footer-->
   <footer class="footer bg-dark">
 
     <div class="social">
@@ -288,5 +197,6 @@
 
   </footer>
 </body>
-
 </html>
+            
+       
