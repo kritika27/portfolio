@@ -163,6 +163,13 @@ img {
     transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
     transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
   }
+  img{
+    height:100%;
+    width:100%;
+  }
+  .item-image{
+    height:28vh;
+  }
   
   .item:after:hover {
     transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
