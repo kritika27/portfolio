@@ -10,7 +10,7 @@ This is a Portfolio App built in HTML5 and CSS.
 
 ## Screenshot
 
-To be added.
+![portfolio](https://user-images.githubusercontent.com/4997491/116507413-d719dd00-a8dc-11eb-9c12-444043311014.JPG)
 
 ## Installation
 
