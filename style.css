@@ -314,4 +314,7 @@ img {
     margin:20px 0px 0px 30px;
   }
 
+  .skill-column{
+    max-width:30vw;
+  }
 
