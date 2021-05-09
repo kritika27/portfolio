@@ -61,11 +61,13 @@
 	display: flex;
 	justify-content: center;
 	height: 70vh;
+	
+	margin-top:2rem;
 }
 .cover img {
 	height: 100%;
-
-	animation: drop 1.5s ease;
+width:100%;
+object-fit:cover;
     border-radius:50%;
 }
 
