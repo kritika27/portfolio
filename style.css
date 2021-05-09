@@ -220,6 +220,9 @@ img {
   transition-delay: 300ms;
 }
 
+.project{
+  color:#fff;
+}
 .text-wrap {
   position: absolute;
   width: 100%;
