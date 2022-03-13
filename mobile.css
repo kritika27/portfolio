@@ -93,3 +93,9 @@
     display: none;
   }
 }
+@media (max-width: 500px) {
+  .items img {
+    width: 100vw;
+    object-fit: cover;
+  }
+}

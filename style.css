@@ -20,7 +20,7 @@ ul {
   list-style: none;
 }
 
-a {
+.nav-links a {
   text-decoration: none;
   color: #fff;
 }
@@ -220,8 +220,8 @@ img {
   transition-delay: 300ms;
 }
 
-.project{
-  color:#fff;
+.project {
+  color: #fff;
 }
 .text-wrap {
   position: absolute;
